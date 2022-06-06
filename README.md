@@ -2,7 +2,7 @@
 
 <!-- HEADER -->
 header to page-header
-logo to page-header__logo
+logo to logo
 item to site-nav__item
 link to site-nav__link
 list to site-nav__list

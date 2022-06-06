@@ -1,0 +1,14 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $secondary-bgc;
+}
+
+.page-footer__content {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer__contacts {
+    display: inline-block;
+}
