@@ -4,10 +4,11 @@
 header to page-header
 logo to page-header__logo
 item to site-nav__item
+link to site-nav__link
 list to site-nav__list
 contacts-list to contacts
 items to contacts__items
-contacts to contacts__links
+contacts to contacts__link
 contacts-icons to contacts__icons
 
 <!-- HERO -->
@@ -55,6 +56,8 @@ clients-logo to clients__logo
 <!-- Footer -->
 footer to page-footer
 footer-section to page-footer__content
+adress-block to page-footer__contacts
+
 adress to footer-contacts
 footer-adress to footer-contacts__address
 footer-contacts to footer-contacts__list
@@ -81,7 +84,9 @@ submit-icon to input-form__icon
 <!-- Modal -->
 modal ...
 modal-close to modal__button
+modal-icon to modal__icon
 modal-title to modal__title
+
 callback-data to personal-data
 input-data to personal-data__input
 callback-style to personal-data__type
@@ -103,9 +108,9 @@ portfolio-main to gallery
 filters to gallery__filters
 filters-btn to gallery__categories
 portfolio-filter to gallery__button
+
 projects to gallery__list
 projects-cards to gallery__item
-
 projects-list to project-card
 overlay to ...
 overlay-description to overlay__description
