@@ -17,12 +17,12 @@ order to hero__button
 <!-- Advantages -->
 advantage to advantages
 adv-items to advantages__list
-adv-cards to advantages__card
-adv-icons to advantages__icon
-advantage-details to advantages__title
-advantage-main to advantages__description
-icons-bgc to advantages__icon--decorated    Чи може по БЕМ блок з елементом та модифікатором 
-                                            йти раніше самого блока з елементом?
+
+adv-cards to advantages-card
+icons-bgc to advantages-card__background
+adv-icons to advantages-card__icon
+advantage-details to advantages-card__title
+advantage-main to advantages-card__description
 
  <!-- Сompetencies -->
 practices to competencies
@@ -88,7 +88,7 @@ callback-style to personal-data__type
 users-data to personal-data__area
 input-icon to personal-data__icon
 input-comments to personal-data__comments
-comments-style to personal-data__comments-area  ???
+comments-style to personal-data__placeholder
 checkbox to personal-data__checkbox
 check-hidden to personal-data__checkbox--hidden
 check-icon to personal-data__ckeck-icon
@@ -98,8 +98,17 @@ send-btn to personal-data__button
 send to personal-data__label
 
 <!-- Portfolio -->
+portfolio-main to gallery
 
+filters to gallery__filters
+filters-btn to gallery__categories
+portfolio-filter to gallery__button
+projects to gallery__list
+projects-cards to gallery__item
 
-
-
-
+projects-list to project-card
+overlay to ...
+overlay-description to overlay__description
+cards-description to project-card__description
+portfolio-title to project-card__title
+project-type to project-card__type
