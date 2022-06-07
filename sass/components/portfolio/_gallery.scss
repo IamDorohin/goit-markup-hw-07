@@ -1,11 +1,10 @@
 .gallery {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include verticalCentredPaddings(94px);
 }
 
 .gallery__filters {
-    display: flex;
-    justify-content: center;
+    @extend %list;
+    @include centred-Flex();
     padding-left: 0;
     margin-bottom: 56px;
 }
@@ -15,6 +14,7 @@
 }
 
 .gallery__button {
+    @extend %btn;
     display: block;
     padding: 6px 22px;
     font-weight: 500;
@@ -28,10 +28,9 @@
     background-color: $card-bgc;
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
 
-    transition-property: color, background-color, filter;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    @include animation(color);
+    @include animation(background-color);
+    @include animation(filter);
     
     &:hover, &:focus {
         color: #ffffff;
@@ -48,6 +47,7 @@
 }
 
 .gallery__list {
+    @extend %list;
     display:flex;
     flex-wrap: wrap;
     padding-left: 0;

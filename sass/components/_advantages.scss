@@ -3,6 +3,7 @@
 }
 
 .advantages__list {
+    @extend %list;
     display: flex;
     margin: 0;
     padding-left: 0;
@@ -17,9 +18,7 @@
 }
 
 .advantages-card__background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centred-Flex();
     margin-bottom: 30px;
     height: 120px;
     background-color: $card-bgc;

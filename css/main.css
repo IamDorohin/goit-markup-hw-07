@@ -1,3 +1,22 @@
+.site-nav, .contacts, .advantages__list, .competencies__list, .team-members__list, .social-accounts, .clients__list, .footer-contacts__list, .social-networks__list, .gallery__filters, .gallery__list {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+}
+
+.hero__button, .modal__button, .gallery__button {
+  border: 0 solid transparent;
+}
+
+.logo-header, .logo-footer {
+  color: #2196F3;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -39,22 +58,12 @@ button {
   outline: none;
 }
 
-.list {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
 p {
   margin: 0;
-}
-
-.btn {
-  border: 0 solid transparent;
 }
 
 .container {
@@ -65,15 +74,6 @@ p {
   padding-right: 15px;
 }
 
-.logo {
-  color: #2196F3;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 .logo-header {
   margin-right: 93px;
 }
@@ -82,19 +82,22 @@ p {
   color: #000000;
 }
 
-.logo--inverse {
-  color: #ffffff;
-}
-
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.logo--inverse {
+  color: #ffffff;
 }
 
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -153,8 +156,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   padding-left: 0;
+  margin-left: auto;
 }
 
 .contacts .contacts__items + .contacts__items {
@@ -165,6 +168,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,10 +248,10 @@ p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  -webkit-transition-property: color, -webkit-box-shadow;
-  transition-property: color, -webkit-box-shadow;
-  transition-property: color, box-shadow;
-  transition-property: color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -408,6 +414,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
@@ -432,12 +441,16 @@ p {
   border-radius: 50%;
   background-color: #ffffff;
   color: #AFB1B8;
-  -webkit-transition-property: background-color, color;
-  transition-property: background-color, color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-accounts__link:hover, .social-accounts__link:focus {
@@ -465,6 +478,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 0;
 }
 
@@ -483,23 +499,27 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
-  height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 170px;
+  height: 92px;
   color: #AFB1B8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition-property: color, border;
-  transition-property: color, border;
+  -webkit-transition-property: color;
+  transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover, .clients__link:focus {
@@ -671,6 +691,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1025,10 +1048,10 @@ p {
   background-color: #2196F3;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-  -webkit-transition-property: -webkit-filter;
-  transition-property: -webkit-filter;
-  transition-property: filter;
-  transition-property: filter, -webkit-filter;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1060,6 +1083,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 0;
   margin-bottom: 56px;
 }
@@ -1081,14 +1107,22 @@ p {
   background-color: #F5F4FA;
   -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
-  -webkit-transition-property: color, background-color, -webkit-filter;
-  transition-property: color, background-color, -webkit-filter;
-  transition-property: color, background-color, filter;
-  transition-property: color, background-color, filter, -webkit-filter;
+  -webkit-transition-property: color;
+  transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: -webkit-filter;
+  transition-property: -webkit-filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery__button:hover, .gallery__button:focus {
@@ -1157,12 +1191,6 @@ p {
   border-left: 1px solid #EEEEEE;
 }
 
-.project-card:hover .project-card__description,
-.project-card:focus .project-card__description {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
 .project-card__title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -1206,5 +1234,11 @@ p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .overlay__description,
+.project-card:focus .overlay__description {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 /*# sourceMappingURL=main.css.map */

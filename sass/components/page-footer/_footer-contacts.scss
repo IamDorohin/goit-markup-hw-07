@@ -9,6 +9,7 @@
 }
 
 .footer-contacts__list {
+    @extend %list;
     padding-left: 0;
 }
 
@@ -21,9 +22,7 @@
     line-height: 1.71;
     text-decoration: none;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
 
     &:hover, &:focus {
         color: $accent-color;

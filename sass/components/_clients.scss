@@ -1,6 +1,5 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include verticalCentredPaddings(94px);
 }
 
 .clients__title {
@@ -8,8 +7,8 @@
 }
 
 .clients__list {
-    display: flex;
-    justify-content: center;
+    @extend %list;
+    @include centred-Flex();
     padding-left: 0;
 }
 
@@ -23,18 +22,15 @@
 }
 
 .clients__link {
-    display: flex;
+    @include centred-Flex();
     width: 170px;
     height: 92px;
-    justify-content: center;
-    align-items: center;
     color: #AFB1B8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
-    transition-property: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
+    @include animation(border);
 
     &:hover, &:focus {
         color: $accent-color;

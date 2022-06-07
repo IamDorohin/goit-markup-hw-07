@@ -1,7 +1,8 @@
 .contacts {
+    @extend %list;
     display: flex;
-    margin-left: auto;
     padding-left: 0;
+    margin-left: auto;
 }
 
 .contacts .contacts__items + .contacts__items {
@@ -9,10 +10,8 @@
 }
 
 .contacts .contacts__link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @include centred-Flex();
+    @include verticalCentredPaddings(32px);
 }
 
 .contacts__link {
@@ -22,9 +21,8 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
+
 
     &:hover, &:focus {
         color: $accent-color;
